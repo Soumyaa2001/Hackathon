@@ -14,20 +14,18 @@ class P8
 		return rev;
 	}
 
-	public static String palindrome(int temp){
-		int com = countOfDigit();
+	public static void palindrome(int temp){
+		int com = countOfDigit(temp);
 		if( temp == com)
-			System.out.println(temp+ "It is a palindrome");
+			System.out.println(temp+ " It is a palindrome");
 		else 
-			System.out.println(temp+ "It is not a palindrome");
+			System.out.println(temp+ " It is not a palindrome");
 	}
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter A Number: ");
 		int n = sc.nextInt();
-		int temp = n;
-		countOfDigit(n);
-		palindrome(temp);
+		palindrome(n);
 	}
 }
