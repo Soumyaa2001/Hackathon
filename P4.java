@@ -7,4 +7,4 @@ class P4{
 			System.out.println(ch2);
 	}
 }
-/
+
